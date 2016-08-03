@@ -1,0 +1,13 @@
+#ifndef GAME_HPP
+#define GAME_HPP
+
+#include "SDL.h"
+#include "init_close.hpp"
+#include "globals.hpp"
+
+class Game
+{
+    void Start();
+};
+
+#endif

@@ -1,0 +1,22 @@
+#ifndef ENEMY_HPP
+#define ENEMY_HPP
+
+#include "SDL.h"
+#include "globals.hpp"
+#include "ltimer.hpp"
+
+class Enemy
+{
+    bool Left;
+    SDL_Texture* EnemyTexture;
+    SDL_Rect EnemyBox;
+
+public:
+    Enemy( int x, int y );
+    ~Enemy();
+    void Render();
+    void Move();
+    void MoveDown();
+};
+
+#endif
